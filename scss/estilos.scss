@@ -1,0 +1,600 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  text-decoration: none;
+   }
+
+                   /* fuente */
+body {
+  font-family: 'Indie Flower', cursive; }
+
+                   /* navegador */
+.lista li {
+  display: inline-block; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(120, 100, 50, 0.6);
+  position: fixed;
+  top: 0; 
+
+li {
+  display: inline-block;
+  padding-top: 16px;
+  padding: 16px 22px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1pt;
+  color: black;
+  float: left; 
+
+a:hover:not(.active) {
+  display: inline-block;
+  padding-top: 16px;
+  padding: 16px 22px;
+  color: #ECD662;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1pt;
+  color: black;
+  background-color: rgba(120, 100, 75, 0.6); 
+}
+}
+}
+
+                 /* fondos */
+#fondo1 {
+  background-color: #C3BA85; }
+
+#fondo2 {
+  background-color: #C3BA85; }
+
+#fondo3 {
+  background-color: #C3BA85; }
+
+#fondo4 {
+  background-color: #C3BA85; }
+
+#fondo5 {
+  background-color: #C3BA85; }
+
+                /* titulo inicio */
+#titulo1 h1{
+  text-align: center;
+  letter-spacing: 8pt;
+  color: #ECD662;
+  font-size: 80px;
+  background-color: #cb997e;
+  border-radius: 100px;
+  max-height: 100px;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 75px;
+  border-color: #ECD662;
+  border: 3px solid #ECD662;
+  animation-duration: 4.5s;
+  animation-name: aparecer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+                  /* footer */
+#footer {
+  background-color: #786432;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  font-size: 20px; }
+
+                   /* footer info */
+#footer p {
+  color: #e9c46a;
+  margin-left: 3px;
+  margin-bottom: 3px; }
+
+#footer div {
+  margin-left: 80px; }
+
+                    /* contenedores1 */
+#contenedor2 {
+  display: grid;
+  grid-template-areas: 
+ "header header header" 
+ "texto1 texto2 texto3"
+ "img1 img2 img3"
+ "footer footer footer";
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 80px 700px 400px 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+                  /* texto 1 */
+#texto1 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 88px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#texto1 {
+  grid-area: texto1; }
+
+.info1 {
+  align-items: stretch;
+  margin: 7px;
+  padding: 3px;
+  border: 1px solid #582f0e;
+  background-color: #fefae0;
+  color: #582f0e;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+                    /* texto 2 */
+#texto2 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 170px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#texto2 {
+  grid-area: texto2; }
+
+.info2 {
+  align-items: stretch;
+  margin: 7px;
+  padding: 3px;
+  border: 1px solid #582f0e;
+  background-color: #fefae0;
+  color: #582f0e;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+                     /* texto 3 */
+#texto3 h2 {
+  color: #ECD662;
+  margin-left: 110px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 270px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#texto3 {
+  grid-area: texto3; }
+
+.info3 {
+  align-items: stretch;
+  margin: 7px;
+  padding: 3px;
+  border: 1px solid #582f0e;
+  background-color: #fefae0;
+  color: #582f0e;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+                   /* imagenes contenedor 2 */
+#img1 {
+  grid-area: img1;
+  width: 400px;
+  height: 270px;
+  margin-left: 30px;
+  background-image: url(http://elcaminodetanit.com/wp-content/uploads/2016/07/Medicina-Tradicional-China.jpg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#img2 {
+  grid-area: img2;
+  background-image: url(https://okdiario.com/img/2019/02/24/medicina-china-655x368.jpg);
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#img3 {
+  grid-area: img3;
+  background-image: url(https://media.istockphoto.com/photos/massage-cupping-therapy-picture-id1199986240?k=20&m=1199986240&s=612x612&w=0&h=R8D8AZIsmatoMhDmTww6zc1jCsSPOJQcliWezgNB4Ao=);
+  width: 400px;
+  height: 300px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+                 /* contenedor3 */
+#contenedor3 {
+  display: grid;
+  grid-template-areas: "header header header" 
+ "texto1 texto2 texto3"
+ "img1 img2 img3"
+ "footer footer footer";
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 80px 500px 400px 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+                /* texto 1 */
+.texto1 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 88px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.texto1 {
+  grid-area: texto1; }
+
+#info1 {
+  align-items: stretch;
+  margin: 7px;
+  padding: 3px;
+  border: 1px solid #e7de78;
+  background-color: #fefae0;
+  color: #582f0e;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+                 /* texto 2 */
+.texto2 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.texto2 {
+  grid-area: texto2; }
+
+#info2 {
+  align-items: stretch;
+  margin: 7px;
+  padding: 3px;
+  border: 1px solid #e7de78;
+  background-color: #fefae0;
+  color: #582f0e;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+                 /* texto 3 */
+.texto3 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 180px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.texto3 {
+  grid-area: texto3; }
+
+#info3 {
+  align-items: stretch;
+  margin: 7px;
+  padding: 3px;
+  border: 1px solid #e7de78;
+  background-color: #fefae0;
+  color: #582f0e;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+               /* imagenes contenedor 3*/
+.img1 {
+  grid-area: img1;
+  width: 400px;
+  height: 300px;
+  margin-left: 17px;
+  background-image: url(https://www.artennua.com/wp-content/uploads/2020/04/post-626x313.jpg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 40px; }
+
+.img2 {
+  grid-area: img2;
+  height: 300px;
+  background-image: url(https://cdn.bioguia.com/embed/900f8710bb43e9c2d98603a9016e10bdb8d1578039960/medicina-herbal.jpg?imagick=1&size=500);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 40px; }
+
+.img3 {
+  grid-area: img3;
+  width: 450px;
+  height: 400px;
+  background-image: url(https://www.mujer.com.pa/sites/default/files/field/image/medical-681119_640.jpg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  border-radius: 40px; }
+
+                 /* contenedor 4 */
+#contenedor4 {
+  display: grid;
+  grid-template-areas: "header header header" 
+ "productos1 productos2 productos3"
+ "img_productos1 img_productos2 img_productos3"
+ "footer footer footer";
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 80px 100px 400px 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+                   /* productos 1 */
+#productos1 {
+  grid-area: productos1; }
+
+#productos1 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+                /* productos 2 */
+#productos2 {
+  grid-area: productos2; }
+
+#productos2 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 170px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+                /* productos 3 */
+#productos3 {
+  grid-area: productos3; }
+
+#productos3 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 198px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+               /* img productos */
+.img_productos1 {
+  grid-area: img_productos1;
+  width: 420px;
+  height: 300px;
+  margin: auto;
+  margin-left: 35px;
+  background-image: url(https://m.media-amazon.com/images/I/312Q-J2UYlS._SL500_.jpg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 40px; }
+
+.img_productos2 {
+  grid-area: img_productos2;
+  background-image: url(https://recetascaserasdebelleza.com/wp-content/uploads/2017/10/shampoo-natural.jpg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 40px; }
+
+.img_productos3 {
+  grid-area: img_productos3;
+  background-image: url(https://www.cremas-caseras.es/blog/wp-content/uploads/2015/06/acondicionador-capilar-con-jasmin.jpg);
+  border-radius: 40px;
+  width: 420px;
+  height: 300px;
+  margin: auto; }
+
+               /* contenedor 5 */
+#contenedor5 {
+  display: grid;
+  grid-template-areas: "header header" 
+ "curso1 curso2"
+ "img_curso1 img_curso2"
+ "footer footer";
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: 80px 400px 400px 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+                 /* curso 1*/
+#curso1 {
+  grid-area: curso1; }
+
+#curso1 h2 {
+  color: #ECD662;
+  margin-left: 150px;
+  border: 2px solid #ECD662;
+  background-color: #cb997e;
+  max-width: 130px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.info_curso {
+  align-items: stretch;
+  margin: 7px;
+  padding: 3px;
+  border: 1px solid #582f0e;
+  background-color: #fefae0;
+  color: #582f0e;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+              /* img curso 1 */
+#img_curso1 {
+  grid-area: img_curso1;
+  background-image: url(https://i.pinimg.com/originals/e2/82/77/e28277c0ba3f517c84b2db86c0e9ef39.jpg);
+  margin-left: 7px;
+  max-width: 700px;
+  border-radius: 40px; }
+
+#img_curso2 {
+  grid-area: img_curso2;
+  width: 300px;
+  height: 300px;
+  margin-left: 200px;
+  background-image: linear-gradient(to left, red, yellow);
+  transform: rotate(45deg); }
+
+#img_curso2 {
+  width: 100px;
+  height: 100px;
+  transition: all 2s; }
+
+#img_curso2:hover {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  background-color: red; }
+
+#curso2 {
+  grid-area: curso2;
+  animation-duration: 6s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#imagenindex img {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-left: 100px;
+  }
+
+         /* bootstrap inicio */
+#bootstrap {
+  text-align: center; }
+
+.col-md-5 img {
+  max-height: 600px;
+  max-width: 600px;
+  border-radius: 40px; }
+
+		         /* cursos noticias */
+.noticias {
+  font-size: 40px;
+  text-align: center; 
+  &_noticias .noticias__info {
+    color: red;
+    font-size: 20px; }
+}
+
+		         /* productos naturales */
+
+.producto {
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-align: center;
+  color: #ECD662;
+  background-color: #cb997e;
+  margin: auto;
+}
+.producto__info{
+  border: 1px solid black;
+  font-size: 25px;
+  color: #582f0e;
+  margin: 7px;
+  padding: 7px;
+  margin: auto;
+  background-color: #fefae0;
+  	&_producto__crema{
+  font-size: 30px;
+  text-align: center;}
+  	&_producto__shampoo {
+  font-size: 30px;
+  text-align: center;}
+  	&_producto__acondicionador {
+  font-size: 30px;
+  text-align: center;}
+  	&_producto__unguento {
+  font-size: 30px;
+  text-align: center;}
+  	&_producto__mascarillas {
+  font-size: 30px;
+  text-align: center;}
+  	&_producto__repelente {
+  font-size: 30px;
+  text-align: center;}
+  	&_producto__jabon {
+  font-size: 30px;
+  text-align: center;}
+  	&_producto__balsamo {
+  font-size: 30px;
+  text-align: center;
+  }
+}
+
+
+  	         /* inicio */
+
+ 
+.titularesInfo{
+  color: #582f0e;
+  font-size: 25px;
+  background-color: #fefae0;
+  margin: auto;
+  margin-left: 29px;
+  border: 1px solid #582f0e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10%;
+
+}
+
+.titularesLeft{
+  color: #ECD662;
+  font-size: 50px;
+  letter-spacing: 3px;
+  background-color: #cb997e;
+  margin: auto;
+  max-width: 270px;
+  max-height: 60px;
+  margin-bottom: 7px;
+  border: 1px solid #ECD662;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.titularRight{
+  color: #ECD662;
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin: auto;
+  max-width: 350px;
+  max-height: 60px;
+  margin-bottom: 7px;
+  background-color: #cb997e;
+  border: 1px solid #ECD662;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* inicio info*/
+#queEs h2{
+  color: #ECD662;
+  font-size: 25px;
+  letter-spacing: 2px;
+  background-color: #cb997e;
+  margin: auto;
+  max-width: 130px;
+  max-height: 70px;
+  margin-left: 800px;
+  margin-top: 40px;
+  padding: 3px;
+  border: 1px solid #ECD662;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#queEs p{
+  color: #582f0e;
+  font-size: 20px;
+  background-color: #fefae0;
+  margin: auto;
+  max-width: 1000px;
+  margin-left: 400px;
+  padding: 4px;
+  border: 1px solid #582f0e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10%;
+}
