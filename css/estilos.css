@@ -40,7 +40,8 @@ ul {
       font-weight: bold;
       letter-spacing: 1pt;
       color: black;
-      background-color: rgba(120, 100, 75, 0.6); }
+      background-color: rgba(120, 100, 75, 0.6);
+      text-decoration: none; }
 
 /* fondos */
 #fondo1 {
@@ -72,7 +73,7 @@ ul {
   margin-top: 75px;
   border-color: #ECD662;
   border: 3px solid #ECD662;
-  animation-duration: 4.5s;
+  animation-duration: 2.5s;
   animation-name: aparecer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
@@ -371,73 +372,45 @@ ul {
   margin: auto; }
 
 /* contenedor 5 */
-#contenedor5 {
+.container {
   display: grid;
-  grid-template-areas: "header header"  "curso1 curso2" "img_curso1 img_curso2" "footer footer";
-  grid-template-columns: 4fr 4fr;
-  grid-template-rows: 80px 400px 400px 100px;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 300px 300px;
+  grid-auto-flow: row;
+  gap: 7px 8px;
+  grid-template-areas: ". ." "enCurso imagenes" "proximos1 proximos2"; }
 
-/* curso 1*/
-#curso1 {
-  grid-area: curso1; }
+.enCurso {
+  grid-area: enCurso; }
 
-#curso1 h2 {
-  color: #ECD662;
-  margin-left: 150px;
-  border: 2px solid #ECD662;
-  background-color: #cb997e;
-  max-width: 130px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.imagenes {
+  grid-area: imagenes; }
 
-.info_curso {
-  align-items: stretch;
-  margin: 7px;
-  padding: 3px;
-  border: 1px solid #582f0e;
+.proximos1 {
+  grid-area: proximos1; }
+
+.proximos2 {
+  grid-area: proximos2; }
+
+/* carousel cursos */
+.enCurso {
   background-color: #fefae0;
-  color: #582f0e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid 1px #ECD662; }
+  .enCurso strong {
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #ECD662;
+    margin-left: 200px; }
+
+.enCurso p {
   font-size: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  font-weight: bold; }
 
-/* img curso 1 */
-#img_curso1 {
-  grid-area: img_curso1;
-  background-image: url(https://i.pinimg.com/originals/e2/82/77/e28277c0ba3f517c84b2db86c0e9ef39.jpg);
-  margin-left: 7px;
-  max-width: 700px;
-  border-radius: 40px; }
-
-#img_curso2 {
-  grid-area: img_curso2;
-  width: 300px;
-  height: 300px;
-  margin-left: 200px;
-  background-image: linear-gradient(to left, red, yellow);
-  transform: rotate(45deg); }
-
-#img_curso2 {
-  width: 100px;
-  height: 100px;
-  transition: all 2s; }
-
-#img_curso2:hover {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  background-color: red; }
-
-#curso2 {
-  grid-area: curso2;
-  animation-duration: 6s;
-  animation-name: aparecer; }
-
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+#carouselExampleControls img {
+  max-width: 390px;
+  max-height: 300px;
+  margin: auto; }
 
 #imagenindex img {
   width: 200px;
@@ -445,6 +418,21 @@ ul {
   border-radius: 50%;
   margin-top: 100px;
   margin-left: 100px; }
+
+/* proximamente cursos */
+.proximos1 {
+  background-color: #fefae0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid 1px #ECD662; }
+  .proximos1 strong {
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #ECD662;
+    margin-left: 150px; }
+
+.proximos1 p {
+  font-size: 20px;
+  font-weight: bold; }
 
 /* bootstrap inicio */
 #bootstrap {
